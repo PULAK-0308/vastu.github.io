@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulak's Fitness</title>
+        <style>
+        body {
+            color:rgb(236, 237, 237);
+
+        }
+        h4{
+            color:black;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        
+        .mid {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            background-color: rgb(255, 187, 0);
+            padding: 10px;
+        }
+
+        .navbar {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+                font-size: 30px;
+    
+            }
+    
+            .navbar li a {
+                text-decoration: none;
+                color: rgb(5, 5, 5);
+                padding: 5px 20px;
+                font-size: 25px;
+            }
+        
+        .navbar li a.active,.navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(0, 255, 119);
+            
+            
+        }
+        .p2{
+            margin-top: -250px;
+            margin-left: 400px;
+            margin-right: 300px;
+            
+            color: rgb(4, 5, 5);
+            font-size: 21px;
+       }
+        .name{
+            margin-top: 80px;
+        }
+        h2{
+            color: red;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        img {
+            width: 210px;
+            margin-top: 25px;
+            margin-left: 30px;
+
+        }
+        /* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        
+        
+        
+        
+       
+    </style>
+</head>
+<body>
+   
+    
+    {% load static %}
+    <header class="header">
+        
+        <!--left box for logo-->
+        
+        <!--right box for buttons-->
+
+        <!--mid box for navigation bar-->
+        
+        <div class="mid">
+            <h4>"नमः सिद्धम"</h4>
+            <ul class="navbar">
+                
+                
+                
+                <li><a href='index' class="active">Home</a></li>
+                <li><a href='about'>About us</a></li>
+                <li><a href="house">House Vastu</a></li>
+                <li><a href="factory">Factory Vastu</a></li>
+                <li><a href="hospital">Hospital Vastu</a></li>
+                <li><a href="shopvastu">Shop Vastu</a></li>
+                <li><a href="office">Office Vastu</a></li>
+                <li><a href="warehouse">Warehouse Vastu</a></li>
+                <li><a href="vastutips">Vastu Tips</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Language</button>
+                    <div class="dropdown-content">
+                      <a href="abouthindi">Hindi</a>
+                      <a href="about">English</a>
+                      
+                    </div>
+                  </div>
+            </ul>
+        </div>
+
+    </header>
+    <img src='{% static "vastuimage.jpg" %}'>
+        <h2>Shri Vinayak Vastu</h2>
+    
+    <div class="p2">
+        <p>Shri Vinayak Vastu in Tonk Rd, Jaipur<br>
+Vastu Shastra is a traditional art of attracting positive energy and success. Many believe that consulting a Vastu expert can help achieve harmony and control energy flow. For ages buildings, temples, and even corporate offices are built only after Vastu consultation. It basically guides with the placement of objects, architecture and colour which can bring positive energy to the household. Vastu Shastra Consultants in Jaipur provides service for Vastu consultation on the land or before moving to a new house or office.</p>
+
+<p>You can consult Shri Vinayak Vastu in Tonk Rd Jaipur for proper Vastu consultation and tips.<br><br>
+
+Frequently Asked Questions<br><br>
+1. Can any pandit do Vastu Pooja?<br><br>
+No. You can consult a pandit for Grah Pravesh or Bhoomi pooja. Only a certified Vastu consultant can guide you with the architecture and interiors to attract positive energy.<br><br>
+
+2. Is Vastu consultation important?<br><br>
+Vastu consultation is advised to attract positivity and success. It is not essential and can help control energy and keep negativity away.<br><br>
+
+3. Should I consult Shri Vinayak Vastu before buying land?<br><br>
+Yes, being a Vastu consultant, Shri Vinayak Vastu can help choose the right land direction and assist in architectural design.<br><br>
+
+4. Which colour is best for the bedroom as per Vastu?<br><br>
+Light colours like white, blue, and green are best for the bedroom as per Vastu tips. You must avoid dark colours.<br><br>
+
+5. Is Vastu related to religion?<br><br>
+No. Vastu is a traditional art that is based on scientific facts, planetary forces and elements.</p>
+    </div>
+    
+    
+</body>
+
+</html>

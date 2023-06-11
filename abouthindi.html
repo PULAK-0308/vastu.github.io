@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulak's Fitness</title>
+        <style>
+        body {
+            color:rgb(236, 237, 237);
+
+        }
+        h4{
+            color:black;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        
+        .mid {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            background-color: rgb(255, 187, 0);
+            padding: 10px;
+        }
+
+        .navbar {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+                font-size: 30px;
+    
+            }
+    
+            .navbar li a {
+                text-decoration: none;
+                color: rgb(5, 5, 5);
+                padding: 5px 20px;
+                font-size: 25px;
+            }
+        
+        .navbar li a.active,.navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(0, 255, 119);
+            
+            
+        }
+        .p2{
+            margin-top: -250px;
+            margin-left: 400px;
+            margin-right: 300px;
+            
+            color: rgb(4, 5, 5);
+            font-size: 21px;
+       }
+        .name{
+            margin-top: 80px;
+        }
+        h2{
+            color: red;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        img {
+            width: 210px;
+            margin-top: 25px;
+            margin-left: 30px;
+
+        }
+        /* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        
+        
+        
+        
+       
+    </style>
+</head>
+<body>
+   
+    
+    {% load static %}
+    <header class="header">
+        
+        <!--left box for logo-->
+        
+        <!--right box for buttons-->
+
+        <!--mid box for navigation bar-->
+        
+        <div class="mid">
+            <h4>"नमः सिद्धम"</h4>
+            <ul class="navbar">
+                
+                
+                
+                <li><a href='index' class="active">Home</a></li>
+                <li><a href='about'>About us</a></li>
+                <li><a href="house">House Vastu</a></li>
+                <li><a href="factory">Factory Vastu</a></li>
+                <li><a href="hospital">Hospital Vastu</a></li>
+                <li><a href="shopvastu">Shop Vastu</a></li>
+                <li><a href="office">Office Vastu</a></li>
+                <li><a href="warehouse">Warehouse Vastu</a></li>
+                <li><a href="vastutips">Vastu Tips</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Language</button>
+                    <div class="dropdown-content">
+                      <a href="abouthindi">Hindi</a>
+                      <a href="about">English</a>
+                      
+                    </div>
+                  </div>
+            </ul>
+        </div>
+
+    </header>
+    <img src='{% static "vastuimage.jpg" %}'>
+        <h2>Shri Vinayak Vastu</h2>
+    
+    <div class="p2">
+       <p> टोंक रोड, जयपुर में श्री विनायक वास्तु<br>
+वास्तु शास्त्र सकारात्मक ऊर्जा और सफलता को आकर्षित करने की एक पारंपरिक कला है। कई लोगों का मानना ​​है कि वास्तु विशेषज्ञ से परामर्श करने से सद्भाव प्राप्त करने और ऊर्जा प्रवाह को नियंत्रित करने में मदद मिल सकती है। युगों से भवन, मंदिर और यहां तक ​​कि कॉर्पोरेट कार्यालय भी वास्तु परामर्श के बाद ही बनाए जाते हैं। यह मूल रूप से वस्तुओं, वास्तुकला और रंग के स्थान के साथ मार्गदर्शन करता है जो घर में सकारात्मक ऊर्जा ला सकता है। जयपुर में वास्तु शास्त्र सलाहकार भूमि पर या नए घर या कार्यालय में जाने से पहले वास्तु परामर्श के लिए सेवा प्रदान करते हैं।</p>
+
+<p>उचित वास्तु परामर्श और सुझावों के लिए आप टोंक रोड जयपुर में श्री विनायक वास्तु से परामर्श कर सकते हैं।<br><br>
+
+अक्सर पूछा गया सवाल<br><br>
+1. क्या कोई पंडित वास्तु पूजा कर सकता है?<br><br>
+नहीं। आप गृह प्रवेश या भूमि पूजा के लिए किसी पंडित से सलाह ले सकते हैं। केवल एक प्रमाणित वास्तु सलाहकार ही सकारात्मक ऊर्जा को आकर्षित करने के लिए वास्तुकला और आंतरिक सज्जा के बारे में आपका मार्गदर्शन कर सकता है।<br><br>
+
+2. क्या वास्तु परामर्श महत्वपूर्ण है?<br><br>
+सकारात्मकता और सफलता को आकर्षित करने के लिए वास्तु परामर्श की सलाह दी जाती है। यह आवश्यक नहीं है और ऊर्जा को नियंत्रित करने और नकारात्मकता को दूर रखने में मदद कर सकता है।<br><br>
+
+3. क्या मुझे जमीन खरीदने से पहले श्री विनायक वास्तु से सलाह लेनी चाहिए?<br><br>
+हां, वास्तु सलाहकार होने के नाते, श्री विनायक वास्तु सही भूमि दिशा चुनने और वास्तुशिल्प डिजाइन में सहायता कर सकता है।<br><br>
+
+4. वास्तु के अनुसार बेडरूम के लिए कौन सा रंग सबसे अच्छा होता है?<br><br>
+वास्तु टिप्स के अनुसार हल्के रंग जैसे सफेद, नीला और हरा बेडरूम के लिए सबसे अच्छे होते हैं। आपको गहरे रंगों से बचना चाहिए।<br><br>
+
+5. क्या वास्तु का धर्म से संबंध है?<br><br>
+नहीं। वास्तु एक पारंपरिक कला है जो वैज्ञानिक तथ्यों, ग्रहों की शक्तियों और तत्वों पर आधारित है।</p>
+    </div>
+    
+    
+</body>
+
+</html>

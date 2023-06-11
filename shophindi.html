@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulak's Fitness</title>
+        <style>
+        body {
+            color:rgb(236, 237, 237);
+
+        }
+        h4{
+            color:black;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        
+        .mid {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            background-color: rgb(255, 187, 0);
+            padding: 10px;
+        }
+
+        .navbar {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+                font-size: 30px;
+    
+            }
+    
+            .navbar li a {
+                text-decoration: none;
+                color: rgb(5, 5, 5);
+                padding: 5px 20px;
+                font-size: 25px;
+            }
+        
+        .navbar li a.active,.navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(0, 255, 119);
+            
+            
+        }
+        .p2{
+            margin-top: -250px;
+            margin-left: 450px;
+            margin-right: 380px;
+            text-align:center;
+            color: rgb(4, 5, 5);
+            font-size: 21px;
+       }
+        .name{
+            margin-top: 80px;
+        }
+        h2{
+            color: red;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        h3{
+            text-align:center;
+        }
+        img {
+            width: 210px;
+            margin-top: 25px;
+            margin-left: 30px;
+
+        }
+        .p3{
+            margin-left: 20px;
+            text-align:left ;
+            font-family:'Times New Roman', Times, serif;
+        }
+        /* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        
+        
+        
+        
+       
+    </style>
+</head>
+<body>
+   
+    
+    {% load static %}
+    <header class="header">
+        
+        <!--left box for logo-->
+        
+        <!--right box for buttons-->
+
+        <!--mid box for navigation bar-->
+        
+        <div class="mid">
+            <h4>"नमः सिद्धम"</h4>
+            <ul class="navbar">
+                
+                
+                
+                <li><a href='index' class="active">Home</a></li>
+                <li><a href='about'>About us</a></li>
+                <li><a href="house">House Vastu</a></li>
+                <li><a href="factory">Factory Vastu</a></li>
+                <li><a href="hospital">Hospital Vastu</a></li>
+                <li><a href="shopvastu">Shop Vastu</a></li>
+                <li><a href="office">Office Vastu</a></li>
+                <li><a href="warehouse">Warehouse Vastu</a></li>
+                <li><a href="vastutips">Vastu Tips</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Language</button>
+                    <div class="dropdown-content">
+                      <a href="shophindi">Hindi</a>
+                      <a href="shopvastu">English</a>
+                      
+                    </div>
+                  </div>
+            </ul>
+        </div>
+
+    </header>
+    <img src='{% static "vastuimage.jpg" %}'>
+        <h2>Shri Vinayak Vastu</h2>
+    
+    <div class="p2">
+        <h3 >शॉप वास्तु </h3>
+
+        <p >  किसी भी तरह की शॉप की शुरुआत करने से पहले आपको आपके वास्तु कंसलटेंट से पूर्ण रूप से उस शॉप का वास्तु दीखवाकर ही शुरुवात करनी चाहिए।  
+
+            शॉप के वास्तु में ध्यान देने योग्य बातें यह है कि:–</p>
+        <div class="p3">
+            <p >शॉप का प्रवेश द्वार<br>
+                शॉप में बैठने वाले सेल्समैन का स्थान<br>
+                शॉप में बैठने वाले चपरासी का स्थान<br>
+                मंदिर का स्थान<br>
+                मंदिर में अगरबत्ती लगाकर उचित जगह पर रखने का स्थान<br>
+                तिजोरी रखने का स्थान<br>
+                कैश बॉक्स रखने का स्थान<br>
+                जो माल लंबे समय से नहीं बिक रहा हो उसको रखने का स्थान जिससे वो जल्दी से बिक सके<br>
+        </div>
+        नोट:– शॉप में रखने वाले माल से संबंधित ग्रहों के अनुसार ही शॉप का प्रवेश द्वार निर्धारित होता है।<br><br>
+        इससे संबंधित पूरी जानकारी प्राप्त करने के लिए श्री विनायक वास्तु के कंसलटेंट से संपर्क करें।</p>
+    </div>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulak's Fitness</title>
+        <style>
+        body {
+            color:rgb(236, 237, 237);
+
+        }
+         img {
+            width: 210px;
+            margin-top: 25px;
+            margin-left: 30px;
+
+        }
+
+        h4{
+            color:black;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        
+        .mid {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            background-color: rgb(255, 187, 0);
+            padding: 10px;
+        }
+       
+        .navbar {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .navbar li {
+        display: inline-block;
+            font-size: 30px;
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: rgb(5, 5, 5);
+            padding: 5px 20px;
+            font-size: 25px;
+        }
+
+        
+        .navbar li a.active,.navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(0, 255, 119);
+            
+            
+        }
+        
+        
+        .p1{
+            margin-top: -250px;
+            margin-left: 400px;
+            margin-right: 300px;
+            text-align: center;
+            color: rgb(4, 5, 5);
+            font-size: 19px;
+       }
+        .name{
+            margin-top: 20px;
+        }
+        .para{
+            margin-bottom: 200px;
+        }
+        h2{
+            color: red;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        /* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        
+        
+       
+    </style>
+</head>
+<body>
+   
+  {% load static %}
+
+
+
+    <header class="header">
+        
+        
+        <!--left box for logo-->
+        
+        <!--right box for buttons-->
+
+        <!--mid box for navigation bar-->
+        
+        <div class="mid">
+            <h4>"नमः सिद्धम"</h4>
+            <ul class="navbar">
+                
+                <li><a href='index' class="active">Home</a></li>
+                <li><a href='about'>About us</a></li>
+
+                <li><a href="house">House Vastu</a></li>
+                <li><a href="factory">Factory Vastu</a></li>
+                <li><a href="hospital">Hospital Vastu</a></li>
+                <li><a href="shopvastu">Shop Vastu</a></li>
+                <li><a href="office">Office Vastu</a></li>
+                <li><a href="warehouse">Warehouse Vastu</a></li>
+                <li><a href="vastutips">Vastu Tips</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Language</button>
+                    <div class="dropdown-content">
+                      <a href="vastuhindi">Hindi</a>
+                      <a href="index">English</a>
+                      
+                    </div>
+                  </div>
+            </ul>
+        </div>
+
+    </header>
+   
+        <img src='{% static "vastuimage.jpg" %}'>
+        <h2>Shri Vinayak Vastu</h2>
+    
+    <div class="p1">
+        <span class="para">
+            <h3 >वास्तु</h3>
+            नमस्कार दोस्तों मैं आपको वास्तु के बारे में कुछ बताना चाहता हूं, वास्तु क्या है, घर बनाते समय इसका ध्यान क्यों रखा जाना चाहिए, और ध्यान न देने पर क्या समस्याएं आ सकती हैं, आदि।
+            
+            <p>वास्तु शब्द संस्कृत भाषा के वास से लिया गया है, जिसका अर्थ है जीवन जीना या निवास करना। वास्तु शब्द की उत्पत्ति वास से हुई है और वासु की उत्पत्ति वसु स्थापत्य से हुई है। अर्थ है वी + अस्तु का अर्थ है निवास करना, तो मूल रूप से वास्तु का अर्थ है जहां कोई व्यक्ति निवास करता है। वास्तु शास्त्र का उदय और उसकी संरचना सृष्टि के पंचभूतात्मिक सिद्धांत पर आधारित है। जिस प्रकार हमारा शरीर पंचमहाभूतों से बना है, उसी प्रकार यदि किसी भी भवन के निर्माण में पंचमहाभूतों का पर्याप्त ध्यान रखा जाए तो भवन में रहने वाले सुखी रहते हैं।</p>
+            <p>ये पांच महाभूत हैं (1) पृथ्वी (2) जल (3) अग्नि (4) वायु और (5) आकाश।
+            हमारा ब्रह्मांड भी इन्हीं पांच तत्वों से बना है। भगवान ने हमें ये 5 चीजें दी हैं जो उनके नाम में ही शामिल हैं, जरा देखिए:- "ब" मतलब जमीन, "ग" मतलब आसमान, "व" मतलब हवा, "अ" मतलब आग, "न" मतलब पानी . पानी। अर्थात जब ईश्वर शब्द में सभी पांचों तत्वों का समावेश हो जाता है, तो हम घर बनाते समय इन पांच तत्वों का ध्यान क्यों नहीं रखते, क्योंकि हम इन्हें रूढि़वादी चीजें मानते हैं। जिस तरह से हम पेंट नीचे पहनते हैं और शर्ट ऊपर करते हैं। अगर हम भगवान को गलत साबित करने के लिए कमीज पहनेंगे और पेंट करेंगे, तो हम कैसे दिखेंगे? घर में पांच तत्वों का भी बहुत महत्व है।</p>
+           <p> घर बनाते समय हमें पांच तत्वों का ध्यान रखना चाहिए, घर में पांच तत्वों को ठीक से स्थापित किया जाना चाहिए ताकि घर के सभी सदस्य उस घर में शांति से अपना जीवन व्यतीत कर सकें।</p>
+        </span>
+    
+    
+
+    
+   
+</body>
+
+</html>

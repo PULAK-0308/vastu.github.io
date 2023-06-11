@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulak's Fitness</title>
+        <style>
+        body {
+            color:rgb(236, 237, 237);
+
+        }
+        h4{
+            color:black;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        
+        .mid {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            background-color: rgb(255, 187, 0);
+            padding: 10px;
+        }
+
+        .navbar {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+                font-size: 30px;
+    
+            }
+    
+            .navbar li a {
+                text-decoration: none;
+                color: rgb(5, 5, 5);
+                padding: 5px 20px;
+                font-size: 25px;
+            }
+        
+        .navbar li a.active,.navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(0, 255, 119);
+            
+            
+        }
+        .p2{
+            margin-top: -250px;
+            margin-left: 450px;
+            margin-right: 380px;
+            text-align:center;
+            color: rgb(4, 5, 5);
+            font-size: 21px;
+       }
+        .name{
+            margin-top: 80px;
+        }
+        h2{
+            color: red;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        h3{
+            text-align:center;
+        }
+        img {
+            width: 210px;
+            margin-top: 25px;
+            margin-left: 30px;
+
+        }
+        .p3{
+            margin-left: 20px;
+            text-align:left ;
+        }
+        /* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        
+        
+        
+        
+       
+    </style>
+</head>
+<body>
+   
+    
+    {% load static %}
+    <header class="header">
+        
+        <!--left box for logo-->
+        
+        <!--right box for buttons-->
+
+        <!--mid box for navigation bar-->
+        
+        <div class="mid">
+            <h4>"नमः सिद्धम"</h4>
+            <ul class="navbar">
+                
+                
+                
+                <li><a href='index' class="active">Home</a></li>
+                <li><a href='about'>About us</a></li>
+                <li><a href="house">House Vastu</a></li>
+                <li><a href="factory">Factory Vastu</a></li>
+                <li><a href="hospital">Hospital Vastu</a></li>
+                <li><a href="shopvastu">Shop Vastu</a></li>
+                <li><a href="office">Office Vastu</a></li>
+                <li><a href="warehouse">Warehouse Vastu</a></li>
+                <li><a href="vastutips">Vastu Tips</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Language</button>
+                    <div class="dropdown-content">
+                      <a href="vastutipshindi">Hindi</a>
+                      <a href="vastutips">English</a>
+                      
+                    </div>
+                  </div>
+            </ul>
+        </div>
+
+    </header>
+    <img src='{% static "vastuimage.jpg" %}'>
+        <h2>Shri Vinayak Vastu</h2>
+    
+    <div class="p2">
+        <h3 >Vastu Tips </h3>
+
+        
+        <div class="p3">
+            
+
+            1. First of all we should start our day by touching the feet of our parents.<br><br>
+
+            2. The North East corner of the house should be kept clean and light.<br><br>
+            
+            3. False utensils should not be kept in the kitchen sink at night.<br><br>
+            
+            4. The broom used inside the house should be kept at the right place according to the direction of Vastu. Broom should not be kept in the north-east area of ​​the house.<br><br>
+            
+            5. Food should not be eaten while sitting on the bed of the bedroom.<br><br>
+
+            6. Women often make this mistake that if the dough becomes too sticky at home, then they keep that dough in the refrigerator at night, every woman should avoid making this mistake. It is wrong according to Vastu as well as wrong according to science.<br><br>
+
+            7. Once a week, fathers must eat in a plate with their children.<br><br>
+
+            8. For healthy social relations, put a painting or picture of the rising sun in the east. You should install it only after consulting your Vastu consultant.<br><br>
+
+            9. Put a photo of a running horse on the west wall. You should install it only after consulting your Vastu consultant.<br><br>
+
+            10. Put offensive pictures on the walls of the house.<br><br>
+            
+            11. Place the wall clock on the north wall or east wall only.<br><br>
+            
+            12. Make sure to keep alum or sea salt in each bathroom of your house with the advice of your Vastu consultant.<br><br>
+            
+            13. With the advice of your Vastu Consultant, once a week, do burn pure camphor in every room of the house.<br><br>
+           
+            14. Shoes and slippers worn in the rooms of the house should be separate; shoes and slippers worn outside the house should not come inside the rooms.<br><br>
+
+            15. Keep the kitchen of the house clean and do not take shoes and slippers inside the kitchen at all.<br><br>
+
+            16. Keep a 24-hour recorder of Namokar Mantra, Bhaktamar Stotra (with 48 poems), Gayatri Mantra, Mahamrityunjaya Mantra, or according to your religion, in the north-east corner of the house. This saves you from many negative forces, from negative energy.<br><br>
+
+            17. Do not use old news paper to keep clothes and kitchen utensils etc. in the storage unit or kitchen shelves, it creates stale energy.<br><br>
+
+            18. There should not be any dead plant or dry plant near the main entrance of the house.<br><br>
+
+            19. There should be no dampness and cobwebs inside the house.<br><br>
+
+            20. Water should not keep dripping from the taps of the house.<br><br>
+                
+                
+        </div>
+        
+    </div>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulak's Fitness</title>
+        <style>
+        body {
+            color:rgb(236, 237, 237);
+
+        }
+        h4{
+            color:black;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        
+        .mid {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            background-color: rgb(255, 187, 0);
+            padding: 10px;
+        }
+
+        .navbar {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+                font-size: 30px;
+    
+            }
+    
+            .navbar li a {
+                text-decoration: none;
+                color: rgb(5, 5, 5);
+                padding: 5px 20px;
+                font-size: 25px;
+            }
+        
+        .navbar li a.active,.navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(0, 255, 119);
+            
+            
+        }
+        .p2{
+            margin-top: -250px;
+            margin-left: 400px;
+            margin-right: 300px;
+            text-align: center;
+            color: rgb(4, 5, 5);
+            font-size: 19px;
+       }
+        .name{
+            margin-top: 80px;
+        }
+        h2{
+            color: red;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        img {
+            width: 210px;
+            margin-top: 25px;
+            margin-left: 30px;
+
+        }
+        /* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        
+        
+        
+        
+       
+    </style>
+</head>
+<body>
+   
+    
+    {% load static %}
+    <header class="header">
+        
+        <!--left box for logo-->
+        
+        <!--right box for buttons-->
+
+        <!--mid box for navigation bar-->
+        
+        <div class="mid">
+            <h4>"नमः सिद्धम"</h4>
+            <ul class="navbar">
+                
+                
+                
+                <li><a href='index' class="active">Home</a></li>
+                <li><a href='about'>About us</a></li>
+                <li><a href="house">House Vastu</a></li>
+                <li><a href="factory">Factory Vastu</a></li>
+                <li><a href="hospital">Hospital Vastu</a></li>
+                <li><a href="shopvastu">Shop Vastu</a></li>
+                <li><a href="office">Office Vastu</a></li>
+                <li><a href="warehouse">Warehouse Vastu</a></li>
+                <li><a href="vastutips">Vastu Tips</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Language</button>
+                    <div class="dropdown-content">
+                      <a href="househindi">Hindi</a>
+                      <a href="house">English</a>
+                      
+                    </div>
+                  </div>
+            </ul>
+        </div>
+
+    </header>
+    <img src='{% static "vastuimage.jpg" %}'>
+        <h2>Shri Vinayak Vastu</h2>
+    
+    <div class="p2">
+        <p>
+            <h3> घर का वास्तु</h3>
+            ऐसे व्यक्ति को कभी भी अपने घर का वास्तु न दिखाएं जो कि तोताराम जी हों अर्थात जो आपके घर में प्रवेश करते ही तोते की तरह बोलने लगे, हमेशा अपने घर का वास्तु उसी व्यक्ति को दिखाएं जो वास्तव में वास्तु का जानकार हो जिसके बारे में आपने किया है शोध करें, या अपने घर का वास्तु ऐसे व्यक्ति को दिखाएं जो पहले "तोलें, तोलें और फिर बोलें"। अन्यथा तोताराम जी आपके घर के वास्तु का अर्थ नष्ट कर देंगे। आप स्वयं निर्णय करें कि तोताराम जी कौन हैं और वास्तु विशेषज्ञ कौन हैं। मेरा मतलब आपको सतर्क करना था।
+        </p>
+        <p>मैं एक ऐसे सवाल का जवाब देना चाहूंगा जो हर इंसान के दिल में उठता हो। <br><br>
+
+            प्रश्न 1. हमारे माता-पिता ने इस घर में रहकर ही सारे सुख-संपत्ति प्राप्त की थी, उन्हें किसी प्रकार की कोई परेशानी नहीं थी तो आज हमारे साथ ही ऐसा क्यों हो रहा है? <br>
+            
+            इस प्रश्न का उत्तर देने के लिए मैं आपको उदाहरण के द्वारा समझाना चाहूंगा:- <br>
+            
+            उत्तर-। A के भाग्य में उसकी कुंडली के अनुसार उसका भाग्य जबरदस्त है, उसके भाग्य में वह प्रतिदिन ₹30000 अर्थात 900000 प्रति माह कमाता है। उसकी कुण्डली के अनुसार ब के भाग्य में 70 समस्याएँ हैं और उसकी आय एक हजार रुपये प्रतिदिन है, इतना ही काफी है, ऐसा उसका भाग्य है। अब देखते हैं कि उनके भाग्य के अनुसार उन्हें अपने घरों में कैसा जीवन मिलेगा। समस्या का सामना करते हुए, बी को वास्तु के अनुसार एक पूर्ण वास्तु घर में रहने को मिला, जैसा कि ऊपर कहा गया था कि बी के भाग्य में 70 समस्याएं लिखी हुई हैं और उसके लिए एक दिन का एक हजार रुपये काफी है, अब अगर ऐसा व्यक्ति वास्तु के घर में रहता है तो उसके लिए जो समस्याएं लिखी हैं, उसका सामना तो करना ही पड़ेगा, लेकिन उसकी रोजाना की हजार रुपये की कमाई कहीं नहीं जाएगी। लेकिन राशिफल के अनुसार जो 70 परेशानियां हैं उसका परिणाम भुगतना पड़ेगा। अब यदि B ऐसे घर में रहता है जिसमें पूर्ण वास्तु दोष है तो B भीख मांगने की स्थिति में आ सकता है। क्योंकि इस स्थान पर हम देखते हैं कि ब के दो शत्रु हैं, एक तो वास्तु पुरुष और दूसरा उसका भाग्य, जो उसकी कुंडली में उसके पूर्व जन्मों के अच्छे और बुरे कर्मों के आधार पर उसके जन्म से पहले ही निर्धारित हो जाता है।</p>
+    </div>
+    
+    
+</body>
+
+</html>

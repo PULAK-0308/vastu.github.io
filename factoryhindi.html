@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulak's Fitness</title>
+        <style>
+        body {
+            color:rgb(236, 237, 237);
+
+        }
+        h4{
+            color:black;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        
+        .mid {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            background-color: rgb(255, 187, 0);
+            padding: 10px;
+        }
+
+        .navbar {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+                font-size: 30px;
+    
+            }
+    
+            .navbar li a {
+                text-decoration: none;
+                color: rgb(5, 5, 5);
+                padding: 5px 20px;
+                font-size: 25px;
+            }
+        
+        .navbar li a.active,.navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(0, 255, 119);
+            
+            
+        }
+        .p2{
+            margin-top: -250px;
+            margin-left: 500px;
+            margin-right: 390px;
+            text-align: center;
+            color: rgb(4, 5, 5);
+            font-size: 19px;
+            font-family:'Times New Roman', Times, serif;
+       }
+        .name{
+            margin-top: 80px;
+        }
+        h2{
+            color: red;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        img {
+            width: 210px;
+            margin-top: 25px;
+            margin-left: 30px;
+
+        }
+        /* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        
+        
+        
+        
+       
+    </style>
+</head>
+<body>
+   
+    
+    {% load static %}
+    <header class="header">
+        
+        <!--left box for logo-->
+        
+        <!--right box for buttons-->
+
+        <!--mid box for navigation bar-->
+        
+        <div class="mid">
+            <h4>"नमः सिद्धम"</h4>
+            <ul class="navbar">
+                
+                
+                
+                <li><a href='index' class="active">Home</a></li>
+                <li><a href='about'>About us</a></li>
+                <li><a href="house">House Vastu</a></li>
+                <li><a href="factory">Factory Vastu</a></li>
+                <li><a href="hospital">Hospital Vastu</a></li>
+                <li><a href="shopvastu">Shop Vastu</a></li>
+                <li><a href="office">Office Vastu</a></li>
+                <li><a href="warehouse">Warehouse Vastu</a></li>
+                <li><a href="vastutips">Vastu Tips</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Language</button>
+                    <div class="dropdown-content">
+                      <a href="factoryhindi">Hindi</a>
+                      <a href="factory">English</a>
+                      
+                    </div>
+                  </div>
+            </ul>
+        </div>
+
+    </header>
+    <img src='{% static "vastuimage.jpg" %}'>
+        <h2>Shri Vinayak Vastu</h2>
+    
+    <div class="p2">
+        <h3>औद्योगिक क्षेत्र:- 
+        जिसमें माल का निर्माण किया जाता है। </h3>
+
+<p>किसी भी प्रकार के औद्योगिक संयंत्र में वास्तु को लागू करना आवश्यक होता है।  और वास्तु को औद्योगिक क्षेत्र में लागू करना भी चाहिए। अक्सर देखा गया है कि व्यक्ति अपने घर के वास्तु को ही सुधारने में लगा रहता है उसका अपने कार्यालय व्यवसायिक क्षेत्र, औद्योगिक क्षेत्र आदि में वास्तु का ध्यान ही नहीं आता।  </p>
+
+<p>किसी भी तरीके की फैक्ट्री के निर्माण के समय में यदि हम पंचतत्व को ध्यान में रखकर फैक्ट्री का निर्माण करते हैं तो, इस कठिन और आर्थिक परिदृश्य में भी हम वास्तु के प्रयोग से सभी लक्ष्यों को प्राप्त कर सकते हैं, जो हमारे भाग्य में निर्धारित है जिसमें वास्तु दोषों की वजह से रुकावट आ रही है।  फैक्ट्री में भी हमें फैक्ट्री के भूखंड का आकार फैक्ट्री के मुख्य प्रवेश द्वार, फैक्ट्री में वस्तु के निर्माण का स्थान, निर्माण के बाद वस्तु को बेचने का स्थान, आदि को वास्तु के अनुसार ध्यान में रखकर ही निर्माण करना चाहिए।  निर्माण के समय ध्यान रखने योग्य बातें हैं
+मालिक के कार्यालय का स्थान, मंदिर का स्थान,मशीनरी के लिए स्थान, भारी मशीन और हल्की मशीन दोनों के स्थान अलग-अलग होते हैं, विद्युत उपकरण (विद्युत मीटर,जनरेटर आदि) नए श्रमिकों के ट्रेनिंग का स्थान,शौचालय का स्थान आदि।</p>
+
+<p>सभी चीजों को यदि हम अनदेखा करते हैं तो हमें निम्न समस्याओं से गुजरना पड़ सकता है जैसे:– क्षेत्र में श्रमिक द्वारा या अन्य प्रकार से माल का चोरी होते रहना, श्रमिक संघ द्वारा हड़ताल और मांगे, आकस्मिक दुर्घटनाएं, कम उत्पादकता, मशीनों का अचानक से खराब हो जाना, बिक्री में गिरावट आ जाना, दिवालियापन भारी कर्जा आदि।</p>
+    </div>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulak's Fitness</title>
+        <style>
+        body {
+            color:rgb(236, 237, 237);
+
+        }
+        h4{
+            color:black;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        
+        .mid {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            background-color: rgb(255, 187, 0);
+            padding: 10px;
+        }
+
+        .navbar {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+                font-size: 30px;
+    
+            }
+    
+            .navbar li a {
+                text-decoration: none;
+                color: rgb(5, 5, 5);
+                padding: 5px 20px;
+                font-size: 25px;
+            }
+        
+        .navbar li a.active,.navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(0, 255, 119);
+            
+            
+        }
+        .p2{
+            margin-top: -250px;
+            margin-left: 450px;
+            margin-right: 380px;
+            text-align:center;
+            color: rgb(4, 5, 5);
+            font-size: 21px;
+       }
+        .name{
+            margin-top: 80px;
+        }
+        h2{
+            color: red;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        h3{
+            text-align:center;
+        }
+        img {
+            width: 210px;
+            margin-top: 25px;
+            margin-left: 30px;
+
+        }
+        .p3{
+            margin-left: 20px;
+            text-align:left ;
+            padding-bottom: 10px;
+        }
+        /* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        
+        
+        
+        
+       
+    </style>
+</head>
+<body>
+   
+    
+    {% load static %}
+    <header class="header">
+        
+        <!--left box for logo-->
+        
+        <!--right box for buttons-->
+
+        <!--mid box for navigation bar-->
+        
+        <div class="mid">
+            <h4>"नमः सिद्धम"</h4>
+            <ul class="navbar">
+                
+                
+                
+                <li><a href='index' class="active">Home</a></li>
+                <li><a href='about'>About us</a></li>
+                <li><a href="house">House Vastu</a></li>
+                <li><a href="factory">Factory Vastu</a></li>
+                <li><a href="hospital">Hospital Vastu</a></li>
+                <li><a href="shopvastu">Shop Vastu</a></li>
+                <li><a href="office">Office Vastu</a></li>
+                <li><a href="warehouse">Warehouse Vastu</a></li>
+                <li><a href="vastutips">Vastu Tips</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Language</button>
+                    <div class="dropdown-content">
+                      <a href="warehousehindi">Hindi</a>
+                      <a href="warehouse">English</a>
+                      
+                    </div>
+                  </div>
+            </ul>
+        </div>
+
+    </header>
+    <img src='{% static "vastuimage.jpg" %}'>
+        <h2>Shri Vinayak Vastu</h2>
+    
+    <div class="p2">
+        <h3 >Warehouse Vastu </h3>
+
+        <p >  If you want to make your warehouse according to Vastu Shastra then it is very good.The first thing you need to do is to make sure that your warehouse is large enough to accommodate all of your inventory and storage needs. You also need to think about how much space will be needed for each type of storage system or equipment once it is in place. Once you determine how much space you will need for each type of item, then think about their placement within that warehouse space as per Vastu.<br>
+
+            Important points to be noted for godown as per Vastu Shastra:-</p>
+        <div class="p3">
+            <p >1. First of all selection of size of warehouse premises.<br>
+
+                2. The godown should be selected after paying attention to the roads, ditches, pits, rivers, drains, mountains etc. around the godown premises.<br>
+                
+                3. Special attention should be paid to the main entrance and exit doors in the godown.<br>
+                
+                4. Parking area of the godown.<br>
+                
+                5. Place for weighing goods in godown as per direction.<br>
+                
+                6. According to the direction, on the stairs to be built in the godown and the place of the lift.<br>
+                
+                7. Location of heavy goods to be kept in godown.<br>
+                
+                8. Location of liquid goods to be kept in the godown.<br>
+
+                9. Location of the Pantry of the godown.<br>
+
+                10. Location of underground water tank in godown.<br>
+
+                11. Location of electric meter, generator, solar power plant etc. to be installed in the godown according to direction.<br>
+
+                12. Proper location of overhead tank in godown as per direction.<br>
+
+                13. Slope of the roof of the godown, special attention should be paid to the thickness of the wall on all four sides.<br>
+
+                14. Getting the basement constructed in the godown as per the direction.<br>
+
+                15. Construction of ladies and gents toilets in the godown as per direction , etc.<br>
+        </div>
+        To get information related to this, contact the consultant of Shri Vinayak Vastu.</p>
+    </div>
+    
+    
+</body>
+
+</html>

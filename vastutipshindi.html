@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulak's Fitness</title>
+        <style>
+        body {
+            color:rgb(236, 237, 237);
+
+        }
+        h4{
+            color:black;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        
+        .mid {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            background-color: rgb(255, 187, 0);
+            padding: 10px;
+        }
+
+        .navbar {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+                font-size: 30px;
+    
+            }
+    
+            .navbar li a {
+                text-decoration: none;
+                color: rgb(5, 5, 5);
+                padding: 5px 20px;
+                font-size: 25px;
+            }
+        
+        .navbar li a.active,.navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(0, 255, 119);
+            
+            
+        }
+        .p2{
+            margin-top: -250px;
+            margin-left: 450px;
+            margin-right: 380px;
+            text-align:center;
+            color: rgb(4, 5, 5);
+            font-size: 21px;
+       }
+        .name{
+            margin-top: 80px;
+        }
+        h2{
+            color: red;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        h3{
+            text-align:center;
+        }
+        img {
+            width: 210px;
+            margin-top: 25px;
+            margin-left: 30px;
+
+        }
+        .p3{
+            margin-left: 20px;
+            text-align:left ;
+            
+            font-family:'Times New Roman', Times, serif;
+            
+        }
+        /* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        
+        
+        
+        
+       
+    </style>
+</head>
+<body>
+   
+    
+    {% load static %}
+    <header class="header">
+        
+        <!--left box for logo-->
+        
+        <!--right box for buttons-->
+
+        <!--mid box for navigation bar-->
+        
+        <div class="mid">
+            <h4>"नमः सिद्धम"</h4>
+            <ul class="navbar">
+                
+                
+                
+                <li><a href='index' class="active">Home</a></li>
+                <li><a href='about'>About us</a></li>
+                <li><a href="house">House Vastu</a></li>
+                <li><a href="factory">Factory Vastu</a></li>
+                <li><a href="hospital">Hospital Vastu</a></li>
+                <li><a href="shopvastu">Shop Vastu</a></li>
+                <li><a href="office">Office Vastu</a></li>
+                <li><a href="warehouse">Warehouse Vastu</a></li>
+                <li><a href="vastutips">Vastu Tips</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Language</button>
+                    <div class="dropdown-content">
+                      <a href="vastutipshindi">Hindi</a>
+                      <a href="vastutips">English</a>
+                      
+                    </div>
+                  </div>
+            </ul>
+        </div>
+
+    </header>
+    <img src='{% static "vastuimage.jpg" %}'>
+        <h2>Shri Vinayak Vastu</h2>
+    
+    <div class="p2">
+        <h3 > वास्तु टिप्स </h3>
+
+        
+        <div class="p3">
+            
+
+            1.  सर्वप्रथम हमें हमारे दिन की शुरुआत अपने माता पिता के पैर छूकर करनी चाहिए।<br><br>
+
+            2.  घर के नॉर्थ ईस्ट कॉर्नर को साफ और हल्का रखना चाहिए।<br><br>
+
+            3.  रात में झूठे बर्तन घर के किचन की सिंक में रखे नहीं रहने चाहिए।<br><br>
+
+            4.  घर के अंदर लगने वाली झाड़ू  को वास्तु की दिशा के अनुसार उचित स्थान पर रखना चाहिए।  घर के उत्तर-पूर्व क्षेत्र में झाड़ू नहीं रखनी चाहिए।<br><br>
+
+            5.   बेडरूम के बेड पर बैठकर खाना नहीं खाना चाहिए। <br><br>
+
+            6.  अक्सर महिलाएं यह गलती करती है कि घर में यदि आटा ज्यादा गुंद जाता है तो उस आटे को रात में फ्रिज में रख देती है इस गलती को करने से हर महिला को बचना चाहिए।  यह वास्तु के अनुसार भी गलत है और साइंस के अनुसार ही गलत है।<br><br>
+
+            7.  सप्ताह में एक बार,  पिता अपने बच्चों के साथ एक थाली में भोजन अवश्य करें। <br><br>
+
+            8.  स्वस्थ सामाजिक संबंधों के लिए पूर्व दिशा में उगते सूरज की पेंटिंग या तस्वीर लगाएं।  इसे आप  अपने वास्तु कंसलटेंट के परामर्श से ही लगाएं।<br><br>
+
+            9.  पश्चिम दिशा की दीवार पर भागते हुए घोड़े की फोटो लगाएं।  इसे आप  अपने वास्तु कंसलटेंट के परामर्श से ही लगाएं।<br><br>
+
+            10.  घर की दीवारों पर आक्रामक तस्वीरें ने लगाएं।<br><br>
+
+            11.  दीवार घड़ी को उत्तर की दीवार या पूर्व की दीवार पर ही लगाएं।<br><br>
+
+            12.  अपने घर के प्रत्येक बाथरूम में आपके वास्तु कंसलटेंट के परामर्श द्वारा फिटकरी या समुद्री नमक अवश्य रखें।<br><br>
+
+            13.  आपके वास्तु कंसलटेंट के परामर्श द्वारा, सप्ताह में एक बार घर के हर कमरे में शुद्ध कपूर अवश्य जलाएं।<br><br>
+
+            14.  घर के रूम्स में पहनने के जूते चप्पल अलग ही होने चाहिए घर के बाहर पहने जाने वाले जूते चप्पल रूम्स के भीतर नहीं आने चाहिए।<br><br>
+
+            15.  घर की किचन को साफ रखें और जूते चप्पल तो रसोईघर के अंदर बिलकुल लेकर नहीं जाएं।<br><br>
+
+            16.  घर के ईशान कोण में णमोकार मंत्र,भक्तामर स्तोत्र (48 काव्य वाला), गायत्री मंत्र, महामृत्युंजय मंत्र, या अपने धर्म के अनुसार मंत्र का 24 घंटे चलने वाला रिकॉर्डर अवश्य लगा कर रखें।  इससे आप कई नकारात्मक शक्तियों से, नकारात्मक उर्जा से बच जाते हैं।<br><br>
+
+            17.  स्टोरेज यूनिट या किचन शेल्व्स में कपड़े और किचन के बर्तन आदि रखने के लिए पुराने न्यूज पेपर का इस्तेमाल न करें, इससे बासी एनर्जी पैदा होती है।<br><br>
+
+            18.  घर के मुख्य प्रवेश द्वार के पास किसी भी तरह का कोई मृत पौधा या सूखा पौधा नहीं होना चाहिए।<br><br>
+
+            19.  घर के अंदर किसी भी प्रकार की सीलन और मकड़ी के जाले नहीं होने चाहिए।  <br><br>
+
+            20.  घर के नलों में से पानी टपकता नहीं रहना चाहिए।<br><br>
+                
+                
+        </div>
+        
+    </div>
+    
+    
+</body>
+
+</html>
